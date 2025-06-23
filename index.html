@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Идеи для борьбы с глобальным потеплением</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* светлый фон */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Заголовок */
+        h1 {
+            text-align: center;
+            font-size: 36px; /* больше шрифт */
+            margin-bottom: 30px;
+        }
+
+        /* Основной список идей */
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            font-size: 20px; /* чуть больше текста */
+            line-height: 1.6;
+        }
+
+        /* Кнопка */
+        button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px; /* больше шрифт */
+            background-color: #4CAF50; /* зеленый цвет */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049; /* чуть темнее при наведении */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Идеи для борьбы с глобальным потеплением</h1>
+
+    <ul>
+        <li>Используйте общественный транспорт или велосипед</li>
+        <li>Сокращайте потребление энергии дома</li>
+        <li>Высаживайте деревья</li>
+        <li>Используйте возобновляемые источники энергии</li>
+        <li>Минимизируйте использование пластика и перерабатывайте отходы</li>
+    </ul>
+
+    <button id="moreIdeasBtn">Показать больше идей в том числе</button>
+
+    <!-- Можно добавить скрытые идеи, если нужно -->
+    <!--
+    <ul id="additionalIdeas" style="display:none;">
+        <li>Дополнительная идея 1</li>
+        <li>Дополнительная идея 2</li>
+    </ul>
+    -->
+
+    <script>
+      // Можно добавить функционал для кнопки, чтобы показывать дополнительные идеи
+      document.getElementById('moreIdeasBtn').addEventListener('click', function() {
+          alert('Здесь можно реализовать показ дополнительных идей!');
+          // Или реализовать раскрытие скрытых элементов
+      });
+    </script>
+
+</body>
+</html>

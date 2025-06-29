@@ -8,7 +8,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f0f8ff; /* светлый фон */
+            background-color: #FF69B4	; /* светлый фон */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -34,7 +34,7 @@
             margin-top: 20px;
             padding: 12px 24px;
             font-size: 18px; /* больше шрифт */
-            background-color: #4CAF50; /* зеленый цвет */
+            background-color: #7FFFD4; /* зеленый цвет */
             color: white;
             border: none;
             border-radius: 8px;
@@ -43,7 +43,7 @@
         }
 
         button:hover {
-            background-color: #45a049; /* чуть темнее при наведении */
+            background-color: Turquoise; /* чуть темнее при наведении */
         }
     </style>
 </head>
@@ -51,29 +51,34 @@
 
     <h1>Идеи для борьбы с глобальным потеплением</h1>
 
-    <ul>
-        <li>Используйте общественный транспорт или велосипед</li>
-        <li>Сокращайте потребление энергии дома</li>
-        <li>Высаживайте деревья</li>
-        <li>Используйте возобновляемые источники энергии</li>
-        <li>Минимизируйте использование пластика и перерабатывайте отходы</li>
-    </ul>
+   <ul>
+    <li class="idea-with-border">Используйте общественный транспорт или велосипед</li>
+    <li class="idea-with-border">Сокращайте потребление энергии дома</li>
+    <li class="idea-with-border">Высаживайте деревья</li>
+    <li class="idea-with-border">Используйте возобновляемые источники энергии</li>
+    <li class="idea-with-border">Минимизируйте использование пластика и перерабатывайте отходы</li>
+</ul>
+    <button id="moreIdeasBtn">Показать больше идей</button>
 
-    <button id="moreIdeasBtn">Показать больше идей в том числе</button>
-
-    <!-- Можно добавить скрытые идеи, если нужно -->
-    <!--
+    <!-- Скрытые дополнительные идеи -->
     <ul id="additionalIdeas" style="display:none;">
-        <li>Дополнительная идея 1</li>
-        <li>Дополнительная идея 2</li>
+        <li>Поддерживайте экологические инициативы в вашем сообществе</li>
+        <li>Используйте энергоэффективные лампочки</li>
+        <li>Уменьшайте использование одноразовой посуды и упаковки</li>
     </ul>
-    -->
 
     <script>
-      // Можно добавить функционал для кнопки, чтобы показывать дополнительные идеи
-      document.getElementById('moreIdeasBtn').addEventListener('click', function() {
-          alert('Здесь можно реализовать показ дополнительных идей!');
-          // Или реализовать раскрытие скрытых элементов
+      const btn = document.getElementById('moreIdeasBtn');
+      const additionalIdeas = document.getElementById('additionalIdeas');
+
+      btn.addEventListener('click', () => {
+          if (additionalIdeas.style.display === 'none') {
+              additionalIdeas.style.display = 'block';
+              btn.textContent = 'Скрыть дополнительные идеи';
+          } else {
+              additionalIdeas.style.display = 'none';
+              btn.textContent = 'Показать больше идей';
+          }
       });
     </script>
 

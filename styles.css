@@ -43,3 +43,9 @@ body::before {
   
   z-index: -1; /* чтобы фон был позади всего */
 }
+/* В вашем стиле */
+.idea-with-border {
+    border: 2px solid #000; /* черная рамка */
+    padding: 10px;
+    margin-bottom: 10px;
+}
